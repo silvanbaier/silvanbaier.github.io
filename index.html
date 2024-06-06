@@ -12,6 +12,13 @@
             padding-left: 1rem;
             padding-right: 1rem;
         }
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+        .text {
+            flex: 1;
+        }
         .bold {
             font-weight: bold;
             font-size: 2rem;
@@ -20,17 +27,30 @@
             color: blue;
         }
         img {
-            width: 100%;
+            width: 200px;
             height: auto;
+            margin-left: 1rem;
         }
     </style>
 </head>
 <body>
-    <img src="baier_herobanner.jpg" alt="Silvan Daniel Baier" width="200" height="200">
-    <p class="bold">Silvan Daniel Baier</p>
-    <p>Current Position</p>
-    <p>Experience</p>
-    <p>Contact</p>
+    <div class="container">
+        <div class="text">
+            <p class="bold">Silvan Daniel Baier</p>
 
+            <p>
+                I study how social structures shape and are shaped by the organization, spread, and evaluation of ideas and people. In my research, I primarily use computational methods and rely on large-scale archival data.
+            </p>
+
+            <p>
+                I received a MA in Computational Social Science from the University of Chicago and a BA in Business Administration from the University of St. Gallen.
+            </p>
+                
+            <p>
+                For more information, please see my CV, visit my GOOGLE SCHOLAR, or contact me at EMAIL.
+            </p>
+        </div>
+        <img src="baier_portrait.jpg" alt="Silvan Daniel Baier">
+    </div>   
 </body>
 </html>
